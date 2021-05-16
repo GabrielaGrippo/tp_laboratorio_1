@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Tp2.c
- Author      : 
+ Author      :
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -13,7 +13,7 @@
 #include<ctype.h>
 //#include"Datawarehouse.h"
 #include"ArrayEmployees.h"
-#define LEN 9
+#define LEN 1000
 
 
 int main(void) {
