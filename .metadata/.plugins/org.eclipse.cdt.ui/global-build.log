@@ -1,0 +1,951 @@
+21:58:25 **** Rebuild of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+gcc -o Tp2.exe "src\\Tp2.o" 
+Info: Nothing to build for Tp2
+21:59:35 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+gcc -o Tp2.exe "src\\Tp2.o" 
+22:02:45 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:73:36: warning: comparison between pointer and integer
+     if(list!=NULL && len>0 && *pId !=NULL)
+                                    ^~
+..\src\ArrayEmployees.c:85:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.name);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:89:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.lastName);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:64:9: warning: unused variable 'sector' [-Wunused-variable]
+     int sector;
+         ^~~~~~
+..\src\ArrayEmployees.c:63:11: warning: unused variable 'salario' [-Wunused-variable]
+     float salario;
+           ^~~~~~~
+..\src\ArrayEmployees.c:62:10: warning: unused variable 'apellido' [-Wunused-variable]
+     char apellido[51];
+          ^~~~~~~~
+..\src\ArrayEmployees.c:61:10: warning: unused variable 'nombre' [-Wunused-variable]
+     char nombre[51];
+          ^~~~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:202:24: warning: passing argument 1 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                        ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c:202:41: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                                         ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c: In function 'printEmployee':
+..\src\ArrayEmployees.c:235:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                       ^
+..\src\ArrayEmployees.c:235:30: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                              ^
+..\src\ArrayEmployees.c: In function 'modificarEmpleado':
+..\src\ArrayEmployees.c:309:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].name);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:315:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].lastName);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'initEmployeesializarEmployees':
+..\src\ArrayEmployees.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:226:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }}
+ ^
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:162:23: warning: 'indice' is used uninitialized in this function [-Wuninitialized]
+     printEmployee(list[indice],len);
+                       ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\Tp2.c:21:
+c:\mingw\include\wchar.h: In function 'main':
+c:\mingw\include\wchar.h:494:20: error: nested function 'wcsnlen' declared 'extern'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                    ^~~~~~~
+In file included from ..\src\Tp2.c:21:0:
+c:\mingw\include\string.h:196:20: error: nested function 'strnlen' declared 'extern'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                    ^~~~~~~
+c:\mingw\include\string.h:227:17: error: nested function 'strerror_s' declared 'extern'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                 ^~~~~~~~~~
+In file included from ..\src\Tp2.c:22:0:
+c:\mingw\include\ctype.h:240:43: error: nested function 'isleadbyte' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int isleadbyte (int c)
+                                           ^~~~~~~~~~
+c:\mingw\include\ctype.h:240:43: error: static declaration of 'isleadbyte' follows non-static declaration
+c:\mingw\include\ctype.h:76:38: note: previous declaration of 'isleadbyte' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int isleadbyte (int);
+                                      ^~~~~~~~~~
+..\src\Tp2.c:29:5: warning: 'main' is normally a non-static function [-Wmain]
+ int main()
+     ^~~~
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:55:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:24:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+At top level:
+..\src\Tp2.c:29:5: warning: 'main' defined but not used [-Wunused-function]
+ int main()
+     ^~~~
+22:03:09 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\Tp2.c:21:
+c:\mingw\include\wchar.h: In function 'main':
+c:\mingw\include\wchar.h:494:20: error: nested function 'wcsnlen' declared 'extern'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                    ^~~~~~~
+In file included from ..\src\Tp2.c:21:0:
+c:\mingw\include\string.h:196:20: error: nested function 'strnlen' declared 'extern'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                    ^~~~~~~
+c:\mingw\include\string.h:227:17: error: nested function 'strerror_s' declared 'extern'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                 ^~~~~~~~~~
+In file included from ..\src\Tp2.c:22:0:
+c:\mingw\include\ctype.h:240:43: error: nested function 'isleadbyte' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int isleadbyte (int c)
+                                           ^~~~~~~~~~
+c:\mingw\include\ctype.h:240:43: error: static declaration of 'isleadbyte' follows non-static declaration
+c:\mingw\include\ctype.h:76:38: note: previous declaration of 'isleadbyte' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int isleadbyte (int);
+                                      ^~~~~~~~~~
+..\src\Tp2.c:29:5: warning: 'main' is normally a non-static function [-Wmain]
+ int main()
+     ^~~~
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:55:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:24:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+At top level:
+..\src\Tp2.c:29:5: warning: 'main' defined but not used [-Wunused-function]
+ int main()
+     ^~~~
+22:03:39 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\Tp2.c:21:
+c:\mingw\include\wchar.h: In function 'main':
+c:\mingw\include\wchar.h:494:20: error: nested function 'wcsnlen' declared 'extern'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                    ^~~~~~~
+In file included from ..\src\Tp2.c:21:0:
+c:\mingw\include\string.h:196:20: error: nested function 'strnlen' declared 'extern'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                    ^~~~~~~
+c:\mingw\include\string.h:227:17: error: nested function 'strerror_s' declared 'extern'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                 ^~~~~~~~~~
+In file included from ..\src\Tp2.c:22:0:
+c:\mingw\include\ctype.h:240:43: error: nested function 'isleadbyte' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int isleadbyte (int c)
+                                           ^~~~~~~~~~
+c:\mingw\include\ctype.h:240:43: error: static declaration of 'isleadbyte' follows non-static declaration
+c:\mingw\include\ctype.h:76:38: note: previous declaration of 'isleadbyte' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int isleadbyte (int);
+                                      ^~~~~~~~~~
+..\src\Tp2.c:29:5: warning: 'main' is normally a non-static function [-Wmain]
+ int main()
+     ^~~~
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:55:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:24:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+At top level:
+..\src\Tp2.c:29:5: warning: 'main' defined but not used [-Wunused-function]
+ int main()
+     ^~~~
+22:04:29 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:73:36: warning: comparison between pointer and integer
+     if(list!=NULL && len>0 && *pId !=NULL)
+                                    ^~
+..\src\ArrayEmployees.c:85:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.name);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:89:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.lastName);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:64:9: warning: unused variable 'sector' [-Wunused-variable]
+     int sector;
+         ^~~~~~
+..\src\ArrayEmployees.c:63:11: warning: unused variable 'salario' [-Wunused-variable]
+     float salario;
+           ^~~~~~~
+..\src\ArrayEmployees.c:62:10: warning: unused variable 'apellido' [-Wunused-variable]
+     char apellido[51];
+          ^~~~~~~~
+..\src\ArrayEmployees.c:61:10: warning: unused variable 'nombre' [-Wunused-variable]
+     char nombre[51];
+          ^~~~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:202:24: warning: passing argument 1 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                        ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c:202:41: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                                         ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c: In function 'printEmployee':
+..\src\ArrayEmployees.c:235:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                       ^
+..\src\ArrayEmployees.c:235:30: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                              ^
+..\src\ArrayEmployees.c: In function 'modificarEmpleado':
+..\src\ArrayEmployees.c:309:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].name);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:315:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].lastName);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'initEmployeesializarEmployees':
+..\src\ArrayEmployees.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:226:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }}
+ ^
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:162:23: warning: 'indice' is used uninitialized in this function [-Wuninitialized]
+     printEmployee(list[indice],len);
+                       ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\Tp2.c:21:
+c:\mingw\include\wchar.h: In function 'main':
+c:\mingw\include\wchar.h:494:20: error: nested function 'wcsnlen' declared 'extern'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                    ^~~~~~~
+In file included from ..\src\Tp2.c:21:0:
+c:\mingw\include\string.h:196:20: error: nested function 'strnlen' declared 'extern'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                    ^~~~~~~
+c:\mingw\include\string.h:227:17: error: nested function 'strerror_s' declared 'extern'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                 ^~~~~~~~~~
+In file included from ..\src\Tp2.c:22:0:
+c:\mingw\include\ctype.h:240:43: error: nested function 'isleadbyte' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int isleadbyte (int c)
+                                           ^~~~~~~~~~
+c:\mingw\include\ctype.h:240:43: error: static declaration of 'isleadbyte' follows non-static declaration
+c:\mingw\include\ctype.h:76:38: note: previous declaration of 'isleadbyte' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int isleadbyte (int);
+                                      ^~~~~~~~~~
+..\src\Tp2.c:29:5: warning: 'main' is normally a non-static function [-Wmain]
+ int main()
+     ^~~~
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:55:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:24:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+At top level:
+..\src\Tp2.c:29:5: warning: 'main' defined but not used [-Wunused-function]
+ int main()
+     ^~~~
+22:05:18 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\Tp2.c:21:
+c:\mingw\include\wchar.h: In function 'main':
+c:\mingw\include\wchar.h:494:20: error: nested function 'wcsnlen' declared 'extern'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                    ^~~~~~~
+In file included from ..\src\Tp2.c:21:0:
+c:\mingw\include\string.h:196:20: error: nested function 'strnlen' declared 'extern'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                    ^~~~~~~
+c:\mingw\include\string.h:227:17: error: nested function 'strerror_s' declared 'extern'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                 ^~~~~~~~~~
+In file included from ..\src\Tp2.c:22:0:
+c:\mingw\include\ctype.h:240:43: error: nested function 'isleadbyte' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int isleadbyte (int c)
+                                           ^~~~~~~~~~
+c:\mingw\include\ctype.h:240:43: error: static declaration of 'isleadbyte' follows non-static declaration
+c:\mingw\include\ctype.h:76:38: note: previous declaration of 'isleadbyte' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int isleadbyte (int);
+                                      ^~~~~~~~~~
+..\src\Tp2.c:55:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:24:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+..\src\Tp2.c: At top level:
+..\src\Tp2.c:87:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+22:05:39 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\Tp2.c:21:
+c:\mingw\include\wchar.h: In function 'main':
+c:\mingw\include\wchar.h:494:20: error: nested function 'wcsnlen' declared 'extern'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                    ^~~~~~~
+In file included from ..\src\Tp2.c:21:0:
+c:\mingw\include\string.h:196:20: error: nested function 'strnlen' declared 'extern'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                    ^~~~~~~
+c:\mingw\include\string.h:227:17: error: nested function 'strerror_s' declared 'extern'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                 ^~~~~~~~~~
+In file included from ..\src\Tp2.c:22:0:
+c:\mingw\include\ctype.h:240:43: error: nested function 'isleadbyte' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int isleadbyte (int c)
+                                           ^~~~~~~~~~
+c:\mingw\include\ctype.h:240:43: error: static declaration of 'isleadbyte' follows non-static declaration
+c:\mingw\include\ctype.h:76:38: note: previous declaration of 'isleadbyte' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int isleadbyte (int);
+                                      ^~~~~~~~~~
+..\src\Tp2.c:55:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:24:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+..\src\Tp2.c: At top level:
+..\src\Tp2.c:87:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+22:05:53 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+In file included from c:\mingw\include\string.h:170:0,
+                 from ..\src\Tp2.c:21:
+c:\mingw\include\wchar.h: In function 'main':
+c:\mingw\include\wchar.h:494:20: error: nested function 'wcsnlen' declared 'extern'
+ __CRT_ALIAS size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+                    ^~~~~~~
+In file included from ..\src\Tp2.c:21:0:
+c:\mingw\include\string.h:196:20: error: nested function 'strnlen' declared 'extern'
+ __CRT_ALIAS size_t strnlen (const char *__text, size_t __maxlen)
+                    ^~~~~~~
+c:\mingw\include\string.h:227:17: error: nested function 'strerror_s' declared 'extern'
+ __CRT_ALIAS int strerror_s (char *__buf, size_t __len, int __err)
+                 ^~~~~~~~~~
+In file included from ..\src\Tp2.c:22:0:
+c:\mingw\include\ctype.h:240:43: error: nested function 'isleadbyte' declared 'extern'
+ __CRT_INLINE __cdecl __MINGW_NOTHROW  int isleadbyte (int c)
+                                           ^~~~~~~~~~
+c:\mingw\include\ctype.h:240:43: error: static declaration of 'isleadbyte' follows non-static declaration
+c:\mingw\include\ctype.h:76:38: note: previous declaration of 'isleadbyte' was here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int isleadbyte (int);
+                                      ^~~~~~~~~~
+..\src\Tp2.c:55:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:24:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+..\src\Tp2.c: At top level:
+..\src\Tp2.c:87:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+22:06:41 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:54:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:15:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+..\src\Tp2.c: At top level:
+..\src\Tp2.c:86:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+22:06:48 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:54:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:15:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+..\src\Tp2.c: At top level:
+..\src\Tp2.c:86:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+22:07:11 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:54:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:15:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+..\src\Tp2.c: At top level:
+..\src\Tp2.c:86:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+22:07:31 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:54:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:15:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+Info: Nothing to build for Tp2
+Info: Nothing to build for Tp2
+Info: Nothing to build for Tp2
+22:11:35 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tp2.o" "..\\src\\Tp2.c" 
+..\src\Tp2.c: In function 'main':
+..\src\Tp2.c:53:39: warning: passing argument 3 of 'removeEmployee' makes integer from pointer without a cast [-Wint-conversion]
+             removeEmployee(nomina,LEN,&nextId);
+                                       ^
+In file included from ..\src\Tp2.c:15:0:
+..\src\ArrayEmployees.h:28:5: note: expected 'int' but argument is of type 'int *'
+ int removeEmployee(eEmployee list[], int len, int pId);
+     ^~~~~~~~~~~~~~
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Tp2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:11:45 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Tp2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:12:17 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:73:36: warning: comparison between pointer and integer
+     if(list!=NULL && len>0 && *pId !=NULL)
+                                    ^~
+..\src\ArrayEmployees.c:85:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.name);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:89:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.lastName);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:64:9: warning: unused variable 'sector' [-Wunused-variable]
+     int sector;
+         ^~~~~~
+..\src\ArrayEmployees.c:63:11: warning: unused variable 'salario' [-Wunused-variable]
+     float salario;
+           ^~~~~~~
+..\src\ArrayEmployees.c:62:10: warning: unused variable 'apellido' [-Wunused-variable]
+     char apellido[51];
+          ^~~~~~~~
+..\src\ArrayEmployees.c:61:10: warning: unused variable 'nombre' [-Wunused-variable]
+     char nombre[51];
+          ^~~~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:202:24: warning: passing argument 1 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                        ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c:202:41: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                                         ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c: In function 'printEmployee':
+..\src\ArrayEmployees.c:235:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                       ^
+..\src\ArrayEmployees.c:235:30: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                              ^
+..\src\ArrayEmployees.c: In function 'modificarEmpleado':
+..\src\ArrayEmployees.c:309:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].name);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:315:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].lastName);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'initEmployeesializarEmployees':
+..\src\ArrayEmployees.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:226:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }}
+ ^
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:162:23: warning: 'indice' is used uninitialized in this function [-Wuninitialized]
+     printEmployee(list[indice],len);
+                       ^
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Tp2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:13:38 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:73:36: warning: comparison between pointer and integer
+     if(list!=NULL && len>0 && *pId !=NULL)
+                                    ^~
+..\src\ArrayEmployees.c:85:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.name);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:89:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.lastName);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:202:24: warning: passing argument 1 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                        ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c:202:41: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                                         ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c: In function 'printEmployee':
+..\src\ArrayEmployees.c:235:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                       ^
+..\src\ArrayEmployees.c:235:30: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                              ^
+..\src\ArrayEmployees.c: In function 'modificarEmpleado':
+..\src\ArrayEmployees.c:309:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].name);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:315:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].lastName);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'initEmployeesializarEmployees':
+..\src\ArrayEmployees.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:226:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }}
+ ^
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:162:23: warning: 'indice' is used uninitialized in this function [-Wuninitialized]
+     printEmployee(list[indice],len);
+                       ^
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Tp2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:13:44 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+22:14:37 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:70:36: warning: comparison between pointer and integer
+     if(list!=NULL && len>0 && *pId !=NULL)
+                                    ^~
+..\src\ArrayEmployees.c:82:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.name);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:86:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.lastName);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:199:24: warning: passing argument 1 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                        ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c:199:41: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                                         ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c: In function 'printEmployee':
+..\src\ArrayEmployees.c:232:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                       ^
+..\src\ArrayEmployees.c:232:30: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                              ^
+..\src\ArrayEmployees.c: In function 'modificarEmpleado':
+..\src\ArrayEmployees.c:306:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].name);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:312:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].lastName);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'initEmployeesializarEmployees':
+..\src\ArrayEmployees.c:117:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:223:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }}
+ ^
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:159:23: warning: 'indice' is used uninitialized in this function [-Wuninitialized]
+     printEmployee(list[indice],len);
+                       ^
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+22:15:18 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:70:36: warning: comparison between pointer and integer
+     if(list!=NULL && len>0 && *pId !=NULL)
+                                    ^~
+..\src\ArrayEmployees.c:82:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.name);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:86:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.lastName);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:199:24: warning: passing argument 1 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                        ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c:199:41: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                                         ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c: In function 'printEmployee':
+..\src\ArrayEmployees.c:235:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                       ^
+..\src\ArrayEmployees.c:235:30: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                              ^
+..\src\ArrayEmployees.c: In function 'modificarEmpleado':
+..\src\ArrayEmployees.c:309:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].name);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:315:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].lastName);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'initEmployeesializarEmployees':
+..\src\ArrayEmployees.c:117:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:159:23: warning: 'indice' is used uninitialized in this function [-Wuninitialized]
+     printEmployee(list[indice],len);
+                       ^
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Tp2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:15:22 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+22:17:14 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:70:36: warning: comparison between pointer and integer
+     if(list!=NULL && len>0 && *pId !=NULL)
+                                    ^~
+..\src\ArrayEmployees.c:82:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.name);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:86:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.lastName);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:109:6: error: conflicting types for 'initEmployeesializarEmployees'
+ void initEmployeesializarEmployees(eEmployee list[],int len)
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:14:0:
+..\src\ArrayEmployees.h:25:5: note: previous declaration of 'initEmployeesializarEmployees' was here
+ int initEmployeesializarEmployees(eEmployee list[],int len);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:199:24: warning: passing argument 1 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                        ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c:199:41: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                                         ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c: In function 'printEmployee':
+..\src\ArrayEmployees.c:235:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                       ^
+..\src\ArrayEmployees.c:235:30: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                              ^
+..\src\ArrayEmployees.c: In function 'modificarEmpleado':
+..\src\ArrayEmployees.c:309:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].name);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:315:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].lastName);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+22:17:30 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'addEmployee':
+..\src\ArrayEmployees.c:70:36: warning: comparison between pointer and integer
+     if(list!=NULL && len>0 && *pId !=NULL)
+                                    ^~
+..\src\ArrayEmployees.c:82:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.name);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:86:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(nuevoEmployee.lastName);
+                  ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:199:24: warning: passing argument 1 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                        ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c:199:41: warning: passing argument 2 of 'strcmp' from incompatible pointer type [-Wincompatible-pointer-types]
+              if(strcmp(list[i].lastName,list[j].lastName) > 0)
+                                         ^~~~
+In file included from ..\src\ArrayEmployees.c:11:0:
+c:\mingw\include\string.h:77:38: note: expected 'const char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int strcmp (const char *, const char *) __MINGW_ATTRIB_PURE;
+                                      ^~~~~~
+..\src\ArrayEmployees.c: In function 'printEmployee':
+..\src\ArrayEmployees.c:235:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                       ^
+..\src\ArrayEmployees.c:235:30: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'char (*)[51]' [-Wformat=]
+     printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+                              ^
+..\src\ArrayEmployees.c: In function 'modificarEmpleado':
+..\src\ArrayEmployees.c:309:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].name);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c:315:18: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+             gets(list[indice].lastName);
+                  ^~~~
+In file included from ..\src\ArrayEmployees.c:9:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char (*)[51]'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\ArrayEmployees.c: In function 'initEmployeesializarEmployees':
+..\src\ArrayEmployees.c:117:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:159:23: warning: 'indice' is used uninitialized in this function [-Wuninitialized]
+     printEmployee(list[indice],len);
+                       ^
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Tp2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:17:31 **** Incremental Build of configuration Debug for project Tp2 ****
+Info: Internal Builder is used for build
+gcc -o Tp2.exe "src\\ArrayEmployees.o" "src\\Tp2.o" 

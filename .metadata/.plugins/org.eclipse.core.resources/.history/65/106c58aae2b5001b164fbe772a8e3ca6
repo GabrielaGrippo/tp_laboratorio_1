@@ -1,0 +1,343 @@
+/*
+ * ArrayEmployees.c
+ *
+ *  Created on: 15 may. 2021
+ *      Author: pc
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+#include<ctype.h>
+//#include"Datawarehouse.h"
+#include"ArrayEmployees.h"
+
+
+int menu()
+{
+    int opcion;
+
+    system("cls");
+    printf("*** ABM Empleados ***\n\n ");
+    printf(" 1.Alta Empleado\n ");
+    printf(" 2.Modificar Empleado\n ");
+    printf(" 3.Baja Empleado\n ");
+    printf(" 4.Informes Empleados\n ");
+    printf(" 5.Salir\n ");
+
+    printf("\n Ingrese opcion:");
+    //fflush(stdin);
+    scanf("%d",&opcion);
+
+    return opcion;
+}
+
+
+/*int hardcodearEmployees(eEmployee list[],int len,int cant,int* pId)
+{
+    int cantidad=0;
+    if(list != NULL && len >0 && cant >=0 && cant <= len && pId != NULL)
+    {
+        for(int i=0; i <cant; i++)
+        {
+            list[i].id=*pId;
+            (*pId)++;
+            strcpy(list[i].name,nombres[i]);
+            strcpy(list[i].lastName,apellidos[i]);
+            list[i].salary=sueldos[i];
+            list[i].sector=idSectores[i];
+            list[i].isEmpty=0;
+
+            cantidad++;
+        }
+    }
+    return cantidad;
+}*/
+
+int addEmployee(eEmployee list[],int len,int* pId )
+{
+
+    char nombre[51];
+    char apellido[51];
+    float salario;
+    int sector;
+    int todoOk=0;
+    int indice;
+    eEmployee nuevoEmployee;
+
+    system("cls");
+    printf("    Alta Empleado\n");
+    printf("Legajo %d\n",*pId);
+
+    if(list!=NULL && len>0 && *pId !=NULL)
+    {
+        indice=findFree(list,len);
+        if(indice==-1)
+        {
+            printf("No hay lugar en el sistema\n");
+        }
+        else
+        {
+
+            printf("Ingrese Nombre:\n");
+            fflush(stdin);
+            gets(nuevoEmployee.name);
+
+            printf("Ingrese Apellido:\n");
+            fflush(stdin);
+            gets(nuevoEmployee.lastName);
+
+
+            printf("Ingrese sueldo:\n");
+            scanf("%f",&nuevoEmployee.salary);
+
+
+            printf("Ingrese Sector:\n");
+            scanf("%d",&nuevoEmployee.sector);
+
+
+            nuevoEmployee.id=*pId;
+            nuevoEmployee.isEmpty=0;
+            *pId= *pId +1;
+
+            list[indice]=nuevoEmployee;
+            todoOk=1;
+        }
+    }
+
+    return todoOk;
+}
+
+int initEmployeesializarEmployees(eEmployee list[],int len)
+{
+
+    for(int i=0; i<len; i++)
+    {
+        list[i].isEmpty=1;
+    }
+
+}
+
+int findFree(eEmployee list[], int len)
+{
+    int indice = -1;
+
+    for(int i=0; i < len; i++)
+    {
+        if( list[i].isEmpty == 1 )
+        {
+            indice = i;
+            break;
+        }
+    }
+    return indice;
+}
+
+int findEmployeeById (eEmployee list[], int len,int pId)
+{
+    int indice=-1;
+
+    for(int i=0; i<len; i++)
+    {
+        if(list[i].id==pId && !list[i].isEmpty)//que este activo el legajo q se busca
+        {
+            indice=i;
+            break;
+        }
+    }
+    return indice;
+
+}
+
+int removeEmployee(eEmployee list[], int len, int pId)
+{
+
+    int todoOk=0;
+    int indice;
+    char confirm;
+
+    system("cls");
+    printf("     Baja de Empleado\n");
+    printEmployee(list[indice],len);
+    printf("Ingrese Id: ");
+    scanf("%d",&pId);
+
+    indice=findEmployeeById(list,len,pId);
+    if(indice== -1)
+    {
+        printf("No hay ningun empleado registrado con ese Id %d\n",pId);
+    }
+    else
+    {
+        printEmployee(list[indice],len);//le mostramos el empleado del id que ingreso por las dudas
+        printf("Confirma Baja?: ");
+        fflush(stdin);
+        scanf("%c",&confirm);
+        if(confirm=='s')
+        {
+            list[indice].isEmpty=1;
+            todoOk=1;
+        }
+        else
+        {
+            printf("Baja cancelada por el usuario\n");
+        }
+    }
+    return todoOk;
+
+}
+
+int sortEmployees(eEmployee list[], int len){
+{
+
+    eEmployee auxEmployee;//declaro la var para swapear
+
+
+
+    for(int i= 0; i < len-1 ; i++)
+    {
+        for(int j= i+1; j <len; j++)
+        {
+             if(strcmp(list[i].lastName,list[j].lastName) > 0)
+            {
+
+                auxEmployee = list[i];
+                list[i] = list[j];
+                list[j] = auxEmployee;
+            }
+        }
+    }
+    for(int i= 0; i < len-1 ; i++)
+    {
+        for(int j= i+1; j <len; j++)
+        {
+             if(list[i].sector > list[j].sector)
+            {
+
+                auxEmployee = list[i];
+                list[i] = list[j];
+                list[j] = auxEmployee;
+            }
+
+        }
+
+    }
+}}
+
+
+
+
+
+
+int printEmployee(eEmployee anEmployee, int len)
+{
+    printf(" %d   %-10s  %-10s %9.2f  %d   \n"
+           ,anEmployee.id
+           ,anEmployee.name
+           ,anEmployee.lastName
+           ,anEmployee.salary
+           ,anEmployee.sector);
+
+
+    return 0;
+}
+int printEmployees(eEmployee list[], int len)
+{
+
+    int flag=1;
+    printf("       Lista de Empleados\n ");
+    printf(" Id    Nombre   Apellido   Sueldo   Sector\n\n");
+    for(int i=0; i<len; i++)
+    {
+        if(!list[i].isEmpty) //si no esta vacia la estructura entonces la muestro
+        {
+            printEmployee(list[i],len);
+            flag=0;
+        }
+
+    }
+    if(flag) //si la bandera sigue en 1 es porque esta vacio entonces muestro
+    {
+        printf("No hay empleados que mostrar");
+    }
+    printf("\n\n");
+
+    return 0;
+}
+
+int modificarEmpleado(eEmployee list [], int len)
+{
+
+    int todoOk=0;
+    int id;
+    int opcion;
+    int indice;
+    system("cls");
+    printf("----- Modificar Empleado -----\n\n");
+    printEmployees(list,len);
+    printf("\nIngrese id: ");
+    scanf("%d", &id);
+
+
+    indice = findEmployeeById(list,len,id);
+
+    if( indice == -1)
+    {
+        printf("No existe ningun empleado con ese legajo \n\n");
+
+    }
+    else
+    {
+        system("cls");
+        printf(" Id          Nombre         Apellido        Salario     Sector \n\n");
+        printEmployee(list[indice],len);
+        printf("\n\n");
+        printf("1. Modificar Nombre\n");
+        printf("2. Modificar Apellido\n");
+        printf("3. Modificar Salario\n");
+        printf("4. Modificar Sector\n");
+        printf("5. Salir\n\n");
+        printf("Ingrese opcion: ");
+        scanf("%d", &opcion);
+
+        switch(opcion)
+        {
+        case 1:
+            printf("Ingrese Nuevo Nombre: ");
+            fflush(stdin);
+            gets(list[indice].name);
+            break;
+
+        case 2:
+            printf("Ingrese Nuevo Apellido: ");
+            fflush(stdin);
+            gets(list[indice].lastName);
+            break;
+
+        case 3:
+            printf("Ingrese Nuevo Salario: ");
+            fflush(stdin);
+            scanf("%f",&list[indice].salary);
+            break;
+
+        case 4:
+            printf("Ingrese Nuevo Sector: ");
+            fflush(stdin);
+            scanf("%d",&list[indice].sector);
+
+            break;
+
+        case 5:
+            printf("Se cancelo la modificacion de datos ");
+            break;
+            system("pause");
+
+        }
+        todoOk = 1;
+        system("cls");
+        printf("\nModificacion excitosa!!\n\n");
+    }
+    system("pause");
+    return todoOk;
+}
